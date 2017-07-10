@@ -28,10 +28,10 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
         // Use remote resource
-        // mWebView.loadUrl("http://example.com");
+         mWebView.loadUrl("http://www.google.com");
 
         // Stop local links and redirects from opening in browser instead of WebView
-        // mWebView.setWebViewClient(new MyAppWebViewClient());
+         mWebView.setWebViewClient(new MyAppWebViewClient());
 
         // Use local resource
         // mWebView.loadUrl("file:///android_asset/www/index.html");
@@ -50,7 +50,13 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+
+
+        //uncomment the line below
+
+
+
+       // getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -61,10 +67,16 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
+
+// uncomment the code below
+
+
+
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+     //   if (id == R.id.action_settings) {
+       //     return true;
+       // }
 
         return super.onOptionsItemSelected(item);
     }
